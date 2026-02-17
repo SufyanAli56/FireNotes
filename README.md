@@ -1,19 +1,19 @@
 # 🔥 FireNotes
 
-**FireNotes** is an **offline-first notes application** built with **React + Firebase** that works seamlessly even without an internet connection.  
-Notes are cached locally, synced automatically, and resolved intelligently when conflicts occur.
+**FireNotes** is an **offline-first notes application** built with **React + Supabase** that works seamlessly even without an internet connection.  
+Notes are cached locally, synced intelligently, and resolved automatically when conflicts occur.
 
-> ✨ Built to demonstrate **offline persistence**, **real-time sync**, and **modern Firebase architecture**
+> ✨ Built to demonstrate **custom offline architecture**, **real-time sync**, and modern backend engineering
 
 ---
 
 ## 🚀 Live Features
 
-- 📴 **Offline-First Experience**
-- 🔄 Automatic Sync on Reconnect
-- ⚡ Real-Time Updates
-- 🔐 Secure Authentication
-- 🧠 Smart Conflict Resolution
+- 📴 **Offline-First Experience**  
+- 🔄 Automatic Sync on Reconnect  
+- ⚡ Real-Time Updates (via Supabase Realtime)  
+- 🔐 Secure Authentication  
+- 🧠 Smart Conflict Resolution  
 - 🤖 **RAG-Powered Chatbot (FireBot)**
 
 ---
@@ -23,26 +23,47 @@ Notes are cached locally, synced automatically, and resolved intelligently when 
 Most apps break when the internet drops.  
 **FireNotes doesn’t.**
 
-It uses Firebase’s local persistence to:
-- Cache data locally
-- Queue writes offline
-- Sync automatically when back online
+Instead of relying on built-in backend persistence, FireNotes implements a **custom offline-first architecture**:
 
-This makes FireNotes **reliable, fast, and production-ready**.
+- Local caching using IndexedDB  
+- Write queue for offline mutations  
+- Version-based conflict resolution  
+- Intelligent sync engine with Supabase backend  
+
+This makes FireNotes:
+
+- Resilient  
+- Predictable  
+- Scalable  
+- Production-ready
 
 ---
 
 ## 🧩 Tech Stack
 
 | Layer | Technology |
-|-----|------------|
+|-------|------------|
 | Frontend | React |
-| Backend | Firebase |
-| Database | Firestore |
-| Auth | Firebase Authentication |
+| Backend | Supabase |
+| Database | PostgreSQL |
+| Auth | Supabase Auth |
 | Offline Cache | IndexedDB |
+| Realtime | Supabase Realtime |
 | AI Chatbot | RAG Architecture |
-| Hosting | Firebase Hosting |
+| Hosting | Vercel / Netlify |
+
+---
+
+## 🏗 Architecture Overview
+
+FireNotes follows a layered architecture:
+
+- **UI Layer** – React + Tailwind CSS  
+- **Application Layer** – Use cases & orchestration  
+- **Domain Layer** – Business logic & sync engine  
+- **Infrastructure Layer** – Supabase client + IndexedDB  
+
+This separation ensures scalability and clean system boundaries.
 
 ---
 
