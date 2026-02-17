@@ -1,6 +1,6 @@
-# 🔥 FireNotes
+# 🔥 ThoughtBox
 
-**FireNotes** is an **offline-first notes application** built with **React + Supabase** that works seamlessly even without an internet connection.  
+**ThoughtBox** is an **offline-first notes application** built with **React + Supabase** that works seamlessly even without an internet connection.  
 Notes are cached locally, synced intelligently, and resolved automatically when conflicts occur.
 
 > ✨ Built to demonstrate **custom offline architecture**, **real-time sync**, and modern backend engineering
@@ -14,23 +14,23 @@ Notes are cached locally, synced intelligently, and resolved automatically when 
 - ⚡ Real-Time Updates (via Supabase Realtime)  
 - 🔐 Secure Authentication  
 - 🧠 Smart Conflict Resolution  
-- 🤖 **RAG-Powered Chatbot (FireBot)**
+- 🤖 **RAG-Powered Chatbot (ThoughtBot)**
 
 ---
 
-## 🧠 Why FireNotes?
+## 🧠 Why ThoughtBox?
 
 Most apps break when the internet drops.  
-**FireNotes doesn’t.**
+**ThoughtBox doesn’t.**
 
-Instead of relying on built-in backend persistence, FireNotes implements a **custom offline-first architecture**:
+Instead of relying on built-in backend persistence, ThoughtBox implements a **custom offline-first architecture**:
 
 - Local caching using IndexedDB  
 - Write queue for offline mutations  
 - Version-based conflict resolution  
 - Intelligent sync engine with Supabase backend  
 
-This makes FireNotes:
+This makes ThoughtBox:
 
 - Resilient  
 - Predictable  
@@ -56,7 +56,7 @@ This makes FireNotes:
 
 ## 🏗 Architecture Overview
 
-FireNotes follows a layered architecture:
+ThoughtBox follows a layered architecture:
 
 - **UI Layer** – React + Tailwind CSS  
 - **Application Layer** – Use cases & orchestration  
