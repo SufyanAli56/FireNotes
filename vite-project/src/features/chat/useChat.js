@@ -4,7 +4,6 @@ import { searchNotes } from "./ragEngine";
 export function useChat(notes) {
   const [messages, setMessages] = useState([]);
 
-  // Send user query
   const sendMessage = (text) => {
     if (!text) return;
 

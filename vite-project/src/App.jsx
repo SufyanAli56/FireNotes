@@ -49,7 +49,7 @@ function App() {
 
         {/* Chatbot */}
         <div className="mt-12 bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-          <h2 className="text-lg font-semibold mb-4">Ask Your Notes 🤖</h2>
+          <h2 className="text-lg font-semibold mb-4">Ask You 🤖</h2>
 
           <div className="space-y-3 mb-4 max-h-64 overflow-y-auto border p-3 rounded-lg">
             {messages.map((m, i) => (
